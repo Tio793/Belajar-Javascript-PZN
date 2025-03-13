@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Property</title>
+</head>
+<body>
+    <div id="content" class="content">
+    </div>
+
+    <script>
+        const content = document.getElementById("content")
+
+        // create h1 
+
+        const title = document.createElement("h1")
+        title.textContent = "belajar DOM"
+        content.appendChild(title)
+
+        const para = document.createElement("p")
+        para.textContent = "Prasthio IT Engginner"
+        content.appendChild(para)
+
+        const list = document.createElement("ul")
+        
+        content.appendChild(list)
+
+        const item = document.createElement("li")
+        item.textContent = "Prasthio Anak Yang Baik"
+        list.appendChild(item)
+        const item1 = document.createElement("li")
+        item1.textContent = "Prasthio Anak Yang Baik"
+        list.appendChild(item1)
+
+        const tabel = document.createElement("table")
+        tabel.style.display = "flex"
+        tabel.style.justifyContent = "center"
+
+        content.appendChild(tabel)
+
+        const hed = document.createElement("th")
+        hed.style.display = "flex"
+        hed.style.border = "19px solid green"
+        hed.style.width = "600px"
+        hed.style.height = "400px"
+        hed.textContent = "Hallo"
+        hed.style.justifyContent = "center"
+        hed.style.alignItems = "center"
+        hed.style.backgroundColor = "red"
+        hed.style.color = "white"
+
+        tabel.appendChild(hed)
+    </script>
+</body>
+</html>

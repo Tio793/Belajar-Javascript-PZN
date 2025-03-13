@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+        // global scope
+
+        let counter = 0;
+
+        function hitMe(){
+            //local scope hitMe
+            counter++
+        }
+
+        hitMe()
+        hitMe()
+        hitMe()
+        hitMe()
+        hitMe()
+        hitMe()
+
+        document.writeln(counter)
+
+        function first(){
+            //local scope first
+            let firstVariable = "First"; // bisa di akses local scope
+            function firstNested(){
+                console.info(firstVariable);
+                const firstNestedVariabel = "First Nested"; // tidak bisa di akses global scope
+            }
+
+            firstNested()
+            console.info(firstNestedVariabel); //ERROR Karna global scope tidak bisa akses ke local scope
+
+        }   
+
+        function second(){
+            //local scope second
+            let secondVariable = "Second"
+        }
+
+        first()
+    </script>
+</body>
+</html>

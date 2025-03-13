@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opeator Logika Di </title>
+</head>
+<body>
+    <script>
+        console.info("Halo" || "");
+        console.info("" || [])
+        console.info("0" || "NOL")
+        console.info(1 || "NOL")
+        console.info(null && "NULL")
+        console.info(undefined || null)
+        console.info(0 ||  false)
+
+        const name = {
+            fristName : "",
+            lastName : "Karim"
+        }
+        const person = name.fristName || name.lastName;
+        console.info(person)
+    </script>
+</body>
+</html>

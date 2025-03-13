@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title> 
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        div {
+            margin: 0px;
+            padding: 0px;
+            background-color: aqua;
+        }
+
+        p {
+            margin: 0px;
+            padding: 0px;
+            text-align: justify;
+        }
+
+        .artikel1 {
+            height: 200px;
+            background-color: bisque;
+            width: 200px;
+            padding: 10px 20px 10px 30px; /* searah jarum jam (atas,kanan,bawah,kiri)*/
+            margin: 10px 10px 10px 10px; 
+            border-style: solid dotted dashed double;
+            border-width: 10px 5px 10px 5px;
+            border-radius: 20px 0px 20px 0px;
+            writing-mode: vertical-rl;
+        }
+
+        .artikel2 {
+            height: 150px;
+            background-color: rgb(148, 95, 31);
+            width: 300px;
+            padding: 20px;
+            margin: 20px 10px 10px 10px; /*margin akan memilih value yang tinggi yang akan di marginkan,jika sama seperti 10px dan 10px maka hasil nya sama saja tidak menjadi 20px*/
+            border-left-style: solid;
+            border-left-width: 11px;
+            border-right-style: double;
+            border-right-width: 10px;
+            border-radius: 20px 0px 20px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="artikel1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, cupiditate maiores dolorum error magnam, in vero praesentium quisquam dolore iste sunt itaque ratione iusto placeat ad enim cum quam ex.</p>
+    </div>
+    <div class="artikel2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nostrum nihil quia, alias, possimus aspernatur totam nemo consequuntur ipsum magnam in quis eum soluta accusamus deserunt. Quibusdam eum illum vitae?</p>
+    </div>
+</body>
+</html>

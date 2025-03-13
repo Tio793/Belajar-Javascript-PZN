@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+    <style>
+        .halo ~p {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="halo">
+        <article>
+            <p>ini di pilih</p>
+        </article>
+        <p>ini di pilih</p>
+    </div>
+    <p>ini tidak di pilih</p>
+    <p>ini tidak di pilih</p>
+</body>
+</html>

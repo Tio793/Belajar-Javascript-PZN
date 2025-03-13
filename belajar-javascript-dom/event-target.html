@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Target</title>
+</head>
+<body>
+    <input id="clickMe" type="button" value="click me!">
+    <script>
+        const button = document.getElementById("clickMe");
+        button.addEventListener("click",function(){
+            button.setAttribute("value","Kamu sudah klik")
+        })
+        button.addEventListener("click",function(){
+            alert("Tombol di pencet Woy!")
+        })
+    </script>
+</body>
+</html>

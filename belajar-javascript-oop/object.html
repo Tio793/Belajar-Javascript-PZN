@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        function Person(firstName,lastName){
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.sayHello = function (name) {
+                console.info(`Hello ${name}, my name is ${this.firstName}`)
+            }
+        }
+
+        const tio = new Person("tio","karim");
+        // tio.firstName = "tio";
+        // tio.lastName = "Karim"
+        tio.sayHello("Neila")
+        const vina = new Person("elvina","neila");
+        // vina.firstName = "vina"
+        // vina.lastName = "Neila"
+        vina.sayHello("Tio")
+
+        console.info(tio)
+        console.info(vina)
+    </script>
+</body>
+</html>

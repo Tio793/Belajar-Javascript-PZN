@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reguler Expression</title>
+</head>
+<body>
+    <script>
+        {
+            //Create RegExp
+
+            const regex1 = /Prasthio/
+            const regex2 = new RegExp("Prasthio")
+            const regex3 = new RegExp(/Prasthio/)
+        }
+
+        {
+            // test regex
+            const name = "Prastio Karim"
+            const regex = /Karim/
+
+            const result = regex.exec(name);
+            console.info(result)
+
+            const test = regex.test(name);
+            console.info(test)
+        }
+
+        {
+            //regex modifier
+
+            const name = "prastio karim\nElvina neila\nPrastio karim"; 
+            const regex1 = /^p.a/igm
+            const regex2 = /Neila/ig
+            
+
+            let result;
+
+            while ((result = regex1.exec(name)) !== null){
+                console.info(result)
+            }
+
+            while ((result = regex2.exec(name)) !== null){
+                console.info(result)
+            }
+        }
+
+        {
+            //advanced regex
+
+            const regex = /ek[aiueo]/ig
+
+            const name = "eko eki eka eke eko edo eki"
+
+            while ((result = regex.exec(name)) !== null){
+                console.info(result)
+            }
+        }
+
+        {
+            const name = "edo eki eka eke eko edo eki"
+
+            console.info(name.match(/ek[aiueo]/ig))
+            console.info(name.search(/ek[aiueo]/ig))
+            console.info(name.replace(/ek[aiueo]/i, "kamu"))
+            console.info(name.replaceAll(/ek[aiueo]/ig, "kamu"))
+            console.info(name.split(/e/ig))
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Masbro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <style>
+        .head {
+            margin-left: 44vw;
+            margin-top: 60px;
+            font-family: "Nerko One", cursive;
+            font-weight: 400px;
+        }
+
+        .form {
+            margin-left: 44vw;
+        }
+
+        label {
+            font-size: 30px;
+            font-family: "Nerko One", cursive;
+            padding: 18px;
+        }
+
+        input {
+            margin: 5px;
+            border-style: solid;
+            border-color: black;
+            border-radius: 10px;
+            height: 25px;
+            background-color: salmon; 
+        }
+
+        #submit {
+            margin-left: 41px;
+            width: 100px;
+            background-color: cadetblue;
+            color: white;
+            font-family: "Nerko One", cursive;
+            font-weight: 400px;
+        }
+
+        #submit:hover {
+            background-color: aquamarine;           
+        }
+
+        #username:focus, #password:focus {
+            background-color: yellow;
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>Login MasBro</h1>
+    </div>
+    <div class="form">
+        <form action="recieve.html" method="get" name="registrasi">
+           <label for="username">Username</label> <br>
+           <input type="text"  id="username" name="username"><br>
+           <label for="password">Password</label> <br>
+           <input type="password"  id="password" name="password"> <br>
+           <input type="submit" value="Masuk MasBro" id="submit">
+
+
+        </form>
+    </div>
+</body>
+</html>
