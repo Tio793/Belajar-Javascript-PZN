@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htmlElement</title>
+</head>
+<body>
+    <a id="link"></a>
+    <h1 id="judul" class="thio"></h1>
+
+    <script>
+        const link = document.getElementById("link")
+        const judul = document.getElementById("judul")
+
+        link.textContent = "test"
+        link.href = "https://instagram.com"
+        link.target = "_blank"
+        judul.textContent = judul.className
+        judul.dataset.thio = "test"
+    </script>
+</body>
+</html>

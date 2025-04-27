@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style</title>
+</head>
+<body>
+    <input type="button" value="blue">
+    <input type="button" value="yellow">
+    <input type="button" value="red">
+    <div id="canvas" style="background-color: black; width: 500px; height: 500px"></div>
+
+    <script>
+       const buttons = document.querySelectorAll("input")
+       const canvas = document.getElementById("canvas")
+
+       buttons.forEach(btn => {
+        btn.onclick = () =>{
+            canvas.style.backgroundColor = btn.value;
+        }
+       })
+    </script>
+</body>
+</html>
